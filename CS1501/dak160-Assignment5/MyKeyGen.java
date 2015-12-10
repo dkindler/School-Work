@@ -6,7 +6,7 @@ import java.util.Random;
 
 class MyKeyGen {
 
-    static final int KEY_SIZE = 1024;
+    static final int KEY_SIZE = 512;
     static final String PUB_KEY_FILE_NAME = "PublicKey.rsa";
     static final String PRIV_KEY_FILE_NAME = "PrivateKey.rsa";
 
