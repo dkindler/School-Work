@@ -1,0 +1,18 @@
+Daniel Kindler
+11/8/15
+Assignment 3
+Documentation
+
+In this project we implemented a double-priority queue. It was pretty obvious we’d have to start off somewhere, so I used the MinPQ.java class given to us by our class’s textbook.
+
+Next, I had to decide on how I would implement the double-PQ. I decided that I wouldn’t make the class abstract, and that it would be specifically designed to handle the Car class I created, since our README.md file didn’t tell us not to. My PQ class was designed to only handle the Car.java class I created.
+
+The Car.java class was to serve as representation of a specific car. It held all the necessary data like VIN, color, make, etc.
+
+However, it became apparent that multiple copies of the car would be needed for this project. I decided that my Double priority queue was to have a MinPQ for milage, a MinPQ for price, and an array list for all the cars in our possession. Thus, our spacial usage, where the number of cars is ’n’, is O(3n). At this pace we’d have three copies of cars at any given time. So, what I decided to do was to create a second car class called SortCar.java. This class would be the Key in our milage and price MinPQs.
+
+SortCar.java has two fields: sortValue, which was the value the instance was to be sorted by, and index, an int representing the index of that particular car in the DoublePQ’s arrayList of cars. This proved very efficient. For example, if I was to delete a SortCar in the price MinPQ, I immediately knew the car’s SortCar.index to look for in the milage MinPQ. Then, I could just delete the Car instance in the cars arrayList by using arrayList.remove(sortCar.index)); Those proved to be very helpful, but I did recognize that to remove one item, I had to remove it from a total of three data stacks. That means the runtime for removal is O(1) (arrayList) + 2*O(n) (for the two minPQs). Insert had the same runtime as well, since when we added a new car instance we’d need to create two more instances to insert into the milage PQ and the price PQ.
+
+The reason I decided to use two MinPQs is because our program had to return a car based on EITHER its price or milage. So, that means I could safely create two MinPQs, each with its own use, without having to worry about the other value.
+
+To ensure my program wouldn’t crash, and would have consistent data, I ensured that all inputs were valid. For example, the VIN must always be of length 17. The vin also does not contain any o’s or i’s. And finally, the vin when inputted is always converted to lower case to ensure that ABC12345678901234 == abc12345678901234. I also ensured that a user could not add two cars with the same VIN value, since a VIN serves as an identification number.

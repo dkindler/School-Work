@@ -1,0 +1,40 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:  
+Daniel Kindler
+
+Lecture section:
+Tu Thurs 2:30PM
+
+Recitation day and time:  
+Wed 9AM
+
+Assignment #:
+4
+
+Program due date:
+Nov 25th 12:00AM
+
+Handed in date:
+Nov 23rd
+
+Source code file name(s):
+Airline.java
+
+Other file name(s) (if relevant):
+All other files were retrieved from the book
+
+Does your program run without error?:
+Yes
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+N/A
+
+Additional comments to the grader:

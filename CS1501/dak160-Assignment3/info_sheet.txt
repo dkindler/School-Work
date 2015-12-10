@@ -1,0 +1,53 @@
+========================================
+CS/COE 1501 Assignment Information Sheet
+----------------------------------------
+
+You must submit an information sheet with every assignment.  Also be sure
+to submit all materials following the procedures described on the
+submission procedures page.
+
+Name:
+Daniel Kindler
+
+Lecture section:
+Tu Thur 2:30PM
+
+Recitation day and time:
+Wed 9AM
+
+Assignment #:  
+3
+
+Program due date:
+11/8/15 11:59:00PM
+
+Handed in date:
+11/8/15
+
+Source code file name(s):
+DPQueue.java
+SortCar.java
+Car.java
+Main.java
+
+Other file name(s) (if relevant):
+MinPQ.java
+StdIn.java
+StdOut.java
+
+
+Does your program run without error?:
+Yes
+
+If not, what is/are the error(s) and which parts of your program run
+correctly?:
+
+
+Additional comments to the grader:
+
+
+
+
+
+
+
